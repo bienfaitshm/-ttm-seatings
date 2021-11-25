@@ -65,7 +65,7 @@ function valuetext(value: number) {
 }
 
 
-const Trajet = React.forwardRef((props, ref) => {
+const Trajet = React.forwardRef(() => {
     const { trajets, selectedTrajet } = React.useContext(SeatConfigContext);
     const maxTrajet = React.useMemo(()=>trajets.length-1,[trajets]);
 
@@ -73,6 +73,7 @@ const Trajet = React.forwardRef((props, ref) => {
         const [nStart, NEnd] = newValue as number[];
         const [oStart,oEnd] = selectedTrajet;
         if(nStart !== oStart || NEnd !== oEnd){
+            console.log(event)
             // setValue((state)=>{
             //     if(nStart !== NEnd){
             //         return [nStart, NEnd];

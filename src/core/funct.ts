@@ -1,4 +1,4 @@
-import { SeatsInterface, dataPrecomposion, CabineConfigurationInterface } from "./type"
+import { SeatsInterface, dataPrecomposion } from "./type"
 
 export function getComposition(precompostion?: dataPrecomposion[]): SeatsInterface[] {
     // 

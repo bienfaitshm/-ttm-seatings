@@ -21,7 +21,7 @@ const SeatDescription: React.FC<SeatDescriptionPropsType> = (props) => {
         </Stack>
     )
 }
-export const DescriptionContainer: React.FC<Props> = (props) => {
+export const DescriptionContainer: React.FC<Props> = () => {
     return (
         <Box>
             <Box style={{ marginBottom: 20 }}>

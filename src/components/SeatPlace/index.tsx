@@ -13,7 +13,7 @@ export interface SeatPlaceProps extends ButtonProps{
 }
 
 
-const SeatPlace = React.forwardRef<any, SeatPlaceProps>(({modeDev,onPress, ...props}, ref) => {
+const SeatPlace = React.forwardRef<any, SeatPlaceProps>(({modeDev,onPress, ...props}) => {
     const info = props.info;
     const classesVariant = React.useMemo(()=>{
         return modeDev ? "outlined" : (

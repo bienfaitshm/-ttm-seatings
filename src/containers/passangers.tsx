@@ -1,13 +1,13 @@
 import * as React from 'react';
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
 interface CardPassangerInfoProps{
 
 }
 
 
-const CardPassangerInfo:React.FC<CardPassangerInfoProps> = (props) => {
+const CardPassangerInfo:React.FC<CardPassangerInfoProps> = () => {
 
     return (
         <Box>
@@ -30,7 +30,7 @@ const CardPassangerInfo:React.FC<CardPassangerInfoProps> = (props) => {
         </Box>
     )
 }
-export const PassangerContainer: React.FC = (props) => {
+export const PassangerContainer: React.FC = () => {
     return (
         <Box>
             <Typography style={{fontWeight :"bold", marginBottom : 20}}>Passanger</Typography>
